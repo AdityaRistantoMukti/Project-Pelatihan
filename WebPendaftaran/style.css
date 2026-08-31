@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(10, 10, 67);
+    color: #F0F0F0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar { 
+    display: flex;
+    justify-content: center;
+    color: #F0F0F0;
+    gap: 20px;    
+    
+}
+.navbar a {
+    color: #f0f0f06f;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #F0F0F0;
+}
+.profil {
+    width: 100%;        
+    background-image: url(gambar/tempat.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;        
+    color: #F0F0F0;    
+}
+
+.overlay {
+    width: 100%;    
+    background-color: rgba(0, 0, 0, 0.429);
+}
+.profil h3 {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 0px 0px;
+    font-size: 30px;    
+    box-sizing: border-box;
+}
+.isi_profil{    
+    padding: 0 20px;
+    display: flex;
+    
+}
+
+.isi_profil p{
+    text-align: justify;
+}
+/* Container Button */
+.box {    
+    width: 300px;
+    display: flex;
+    justify-content: space-between;    
+}
+
+/* Button Lakukan Pendaftaran */
+.button1 {
+    width: auto;
+    padding: 10px;
+    padding-bottom: 15px;    
+    border-radius: 5px;
+    background-color: darkblue;
+}
+/* Edit hyperlink global */
+a {
+    text-decoration: none;
+}
+
+a .button1{
+    color: #F0F0F0;
+}
+
+.button1:hover {
+    background-color: rgb(3, 3, 210);
+}
+
+/* Button Lihat Peserta */
+.button2 {
+    width: auto;
+    padding: 10px;
+    padding-bottom: 15px;    
+    border-radius: 5px;
+    background-color: darkslategrey;
+}
+
+a .button2{
+    color: #F0F0F0;
+}
+
+.button2:hover {
+    background-color: rgb(83, 136, 136);
+}
+
+
+/* Figure atau Gambar */
+.isi_profil figure {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+/* Footer */
+.footer {    
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 880px) {
+    .isi_profil {
+       display: block;
+    }    
+
+    .head h1{
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .head h1{
+        text-align: center;        
+    }        
+}
+
+@media (max-width: 380px) {
+    .isi_profil figure {
+        width: 250px;
+        height: 250px;
+    }
+
+    .box {
+        width: auto;
+        gap: 20px;        
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+}
